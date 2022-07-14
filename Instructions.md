@@ -9,7 +9,7 @@ The goal of this activity is to create End to End automation tests using the fea
 4. Publish your branch when instructed
 
 ### Scoring
-You will be graded based on how many acceptance criteria steps are passing (partial credit may be given for incomplete tests if some but not all steps are implemented). A minimum step completion of 80% is required for a passing grade. Your trainer will run your code to determine what the completion rate is.
+You will be graded based on how many acceptance criteria steps are passing (partial credit may be given for incomplete tests if some but not all steps are implemented). A minimum step completion of 80% is required for a passing grade. Your trainer will run your code as part of the determination of what the completion rate is.
 
 ### Restrictions
 - You may not change the html files
