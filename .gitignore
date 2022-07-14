@@ -83,6 +83,6 @@ buildNumber.properties
 *.code-workspace
 
 # Ignore Settings file
-*.settings
+*.json
 
 # End of https://www.toptal.com/developers/gitignore/api/java,maven,visualstudiocode,executable
