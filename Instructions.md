@@ -1,5 +1,5 @@
 # Instructions
-The goal of this activity is to create End to End automation tests using the features files and web pages provided. The base maven project has already been created: the pom is set up, the web pages are complete, and the feature files are also complete. It is your job to implement the acceptance criteria and get all the steps to pass. It is up to your discretion whether you want to use page object models or not.
+The goal of this activity is to create End to End automation tests using the features files and web pages provided. The base maven project has already been created: the pom is set up, the web pages are complete, and the feature files are also complete. It is your job to implement the acceptance criteria and get all the steps to pass. It is up to your discretion whether you want to use page object models or not. The assessment is open note, but you must work individually.
 
 ### Order of Operations
 1. clone the main repository
