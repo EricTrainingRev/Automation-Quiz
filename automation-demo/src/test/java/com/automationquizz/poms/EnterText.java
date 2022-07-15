@@ -9,10 +9,10 @@ public class EnterText {
     private WebDriver driver;
 
     @FindBy (id="randomString")
-    public WebElement usernameInput;
+    public WebElement nameInput;
 
     @FindBy (id="submitButton")
-    public WebElement passwordInput;
+    public WebElement submit;
 
 
     
@@ -21,6 +21,16 @@ public class EnterText {
        
         PageFactory.initElements(driver,this);
 }
+
+
+
+    public void submitButton() {
+    }
+
+
+
+    public void clickButton(String string) {
+    }
 }
 
 
