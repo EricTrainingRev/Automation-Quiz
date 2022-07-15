@@ -36,7 +36,7 @@ public class PageOne {
     }
 
     public void clickButton(){
-        this.pageOneButton.click()
+        this.pageOneButton.click();
     }
 
 }
