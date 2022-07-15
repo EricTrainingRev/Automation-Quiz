@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form >
+        
+        <input id="one" type="text" required placeholder="something" hidden>
+        <input id="two" type="text" required placeholder="something">
+        <input id="three" type="text" required placeholder="something" hidden>
+        <input id="four" type="text" required placeholder="something">
+        <button id="submit">Submit</button>
+    </form>
+    </body>
+    <script>
+        const start = Date.now();
+        const inputs = document.getElementsByTagName("input");
+        setInterval(()=>{
+            inputs[0].hidden = !inputs[0].hidden
+        },500)
+        setInterval(()=>{
+            inputs[1].hidden = !inputs[1].hidden
+        },700)
+        setInterval(()=>{
+            inputs[2].hidden = !inputs[2].hidden
+        },300)
+        setInterval(()=>{
+            inputs[3].hidden = !inputs[3].hidden
+        },1000)
+
+        document.addEventListener("submit", function (event){
+            event.preventDefault();
+            const time = Date.now() - start;
+            alert(`SUCCESS!!!`)
+        })
+    </script>
+</html>
