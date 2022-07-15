@@ -1,12 +1,12 @@
-package com.automation.poms;
-
+package com.revature.poms;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class pageOne{
-
+public class pageOne {
+    
+    
     private WebDriver driver;
     @FindBy(id = "nameInput") 
     public WebElement usernameInput;
@@ -31,7 +31,7 @@ public class pageOne{
     */
 
     // this method will allow both managers and testers to enter their usernames
-    public void enterUsername(String username){
+    public void enterUserInput(String username){
 
        // to enter a username into the input element we use the sendKeys() method
        this.usernameInput.sendKeys(username);
@@ -45,4 +45,6 @@ public class pageOne{
  
      }
  
+
+
 }
