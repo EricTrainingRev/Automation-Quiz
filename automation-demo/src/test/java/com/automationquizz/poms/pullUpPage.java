@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class EnterText {
+public class pullUpPage {
     private WebDriver driver;
 
     @FindBy (id="randomString")
@@ -16,7 +16,7 @@ public class EnterText {
 
 
     
-    public EnterText(WebDriver driver){
+    public pullUpPage(WebDriver driver){
         this.driver = driver;
        
         PageFactory.initElements(driver,this);
@@ -25,6 +25,7 @@ public class EnterText {
 
 
     public void submitButton() {
+
     }
 
 

@@ -17,10 +17,7 @@ public class seleniumWait {
         TestRunner.driver.get("File:///Users/mauricekabeireho/Automation-Quiz/automation-demo/src/test/resources/webPages/PageTwo.html");
         // Write code here that turns the phrase above into concrete actions
         //throw new io.cucumber.java.PendingException();
-    }
-
-        
-    @When("Selenium enters some text into the first input when it is visible")
+    } @When("Selenium enters some text into the first input when it is visible")
     public void selenium_enters_some_text_into_the_first_input_when_it_is_visible() {
         TestRunner.EnterText.clickButton("name");
         // Write code here that turns the phrase above into concrete actions
@@ -35,14 +32,14 @@ public class seleniumWait {
 
     @When("Selenium enters some text into the third input when it is visible")
     public void selenium_enters_some_text_into_the_third_input_when_it_is_visible() {
-        TestRunner.EnterText.clickButton("name");
+        TestRunner.seleniumWait.clickButton("name");
         // Write code here that turns the phrase above into concrete actions
         // throw new io.cucumber.java.PendingException();
     }
 
     @When("Selenium enters some text into the fourth input when it is visible")
     public void selenium_enters_some_text_into_the_fourth_input_when_it_is_visible() {
-        TestRunner.EnterText.clickButton("name");
+        TestRunner.seleniumWait.clickButton("name");
         // Write code here that turns the phrase above into concrete actions
         // throw new io.cucumber.java.PendingException();
 
@@ -62,7 +59,7 @@ public class seleniumWait {
         String title = TestRunner.driver.getTitle();
         Assert.assertEquals("pagetwo", title);
         // Write code here that turns the phrase above into concrete actions
-        // throw new io.cucumber.java.PendingException();
+        //throw new io.cucumber.java.PendingException();
     }
 
 }

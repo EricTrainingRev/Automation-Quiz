@@ -13,7 +13,7 @@ public class seleniumToWork {
     public WebElement usernameInput;
 
     @FindBy (id="Button")
-    public WebElement passwordInput;
+    public WebElement submit;
 
 
     
@@ -21,15 +21,10 @@ public class seleniumToWork {
         this.driver = driver;
        
         PageFactory.initElements(driver,this);
-}
-
-
-
-    public void addEvent() {
+    }
+        public void clickButton() {
     }
 
 
 
-    public void clickButton(String string) {
-    }
 }

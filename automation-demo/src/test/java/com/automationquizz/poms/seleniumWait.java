@@ -21,5 +21,15 @@ public class seleniumWait {
        
         PageFactory.initElements(driver,this);
 }
+
+
+
+    public void clickButton() {
+    }
+
+
+
+    public void submitButton() {
+    }
 }
 
