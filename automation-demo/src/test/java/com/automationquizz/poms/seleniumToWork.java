@@ -22,4 +22,14 @@ public class seleniumToWork {
        
         PageFactory.initElements(driver,this);
 }
+
+
+
+    public void addEvent() {
+    }
+
+
+
+    public void clickButton(String string) {
+    }
 }
