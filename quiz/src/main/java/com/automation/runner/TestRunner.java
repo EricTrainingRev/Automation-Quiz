@@ -1,11 +1,10 @@
 package com.automation.runner;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 @RunWith(Cucumber.class) 
-@CucumberOptions(features="classpath:features" , glue="com/automation/steps")
+@CucumberOptions(features="classpath:features" , glue="com/revature/steps")
+
 public class TestRunner {
     
 
