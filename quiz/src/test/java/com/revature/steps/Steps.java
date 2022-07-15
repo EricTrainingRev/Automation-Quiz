@@ -71,26 +71,27 @@ public void selenium_has_pulled_up_page_two() {
 }
 
 
-// //PAGE THREE
-// @Given("Selenium has pulled up page three")
-//     public void selenium_has_pulled_up_page_three() {
-//     // Write code here that turns the phrase above into concrete actions
-//     throw new io.cucumber.java.PendingException();
-// }
-// @When("Selenium enters {int} characters into the input while working around the alerts")
-//     public void selenium_enters_characters_into_the_input_while_working_around_the_alerts(Integer int1) {
-//     // Write code here that turns the phrase above into concrete actions
-//     throw new io.cucumber.java.PendingException();
-// }
-// @When("Selenium clicks the submit button for page three")
-//     public void selenium_clicks_the_submit_button_for_page_three() {
-//     // Write code here that turns the phrase above into concrete actions
-//     throw new io.cucumber.java.PendingException();
-// }
-// @Then("An alert should pop up with a success message for page three")
-//     public void an_alert_should_pop_up_with_a_success_message_for_page_three() {
-//     // Write code here that turns the phrase above into concrete actions
-//     throw new io.cucumber.java.PendingException();
-// }
+//PAGE THREE
+@Given("Selenium has pulled up page three")
+    public void selenium_has_pulled_up_page_three() {
+    TestRunner.driver.get("C:/Users/lyndo/Revature-Training/AutoTest/Automation-Quiz/quiz/src/test/resources/web-pages/PageTwo.html");
+}
+@When("Selenium enters {int} characters into the input while working around the alerts")
+    public void selenium_enters_characters_into_the_input_while_working_around_the_alerts(Integer int1) {
+    TestRunner.pagethree.enterString();
+    TestRunner.driver.switchTo().alert().accept();
+
+}
+@When("Selenium clicks the submit button for page three")
+    public void selenium_clicks_the_submit_button_for_page_three() {
+    TestRunner.pagethree.clickButton();
+}
+@Then("An alert should pop up with a success message for page three")
+    public void an_alert_should_pop_up_with_a_success_message_for_page_three() {
+        TestRunner.wait.until(ExpectedConditions.alertIsPresent());
+        String alertText = TestRunner.driver.switchTo().alert().getText();
+        assertEquals("SUCCESS!!!", alertText);
+        TestRunner.driver.switchTo().alert().accept();
+}
 
 }
