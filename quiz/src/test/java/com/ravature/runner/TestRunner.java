@@ -17,7 +17,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="classpath:features", glue="com/quiz/steps", plugin = {"pretty", "html:src/test/resources/reports/html-reports.html"})
+@CucumberOptions(features="classpath:features", glue="com/ravature/steps", plugin = {"pretty", "html:src/test/resources/reports/html-reports.html"})
 
 public class TestRunner {
     public static WebDriver driver;
@@ -35,7 +35,7 @@ public class TestRunner {
         page1 = new Page1(driver);
         page2 = new Page2(driver);
         page3 = new Page3(driver);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 5);
         
         
