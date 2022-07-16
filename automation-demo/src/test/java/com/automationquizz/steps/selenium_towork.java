@@ -36,9 +36,9 @@ public class selenium_towork {
     
     @Then("An alert should pop up with a success message for page three")
     public void An_alert_should_pop_up_with_a_success_message_for_page_three() {
-        TestRunner.Wait.until(ExpectedConditions.titleIs("alert"));
-            String title =TestRunner.driver.getTitle();
-            Assert.assertEquals("alert", title);
+        TestRunner.Wait.until(ExpectedConditions.alertIsPresent());
+            String alert =TestRunner.driver.getWindowHandle();
+            Assert.assertEquals("SUCCESS!!!", alert);
         // Write code here that turns the phrase above into concrete actions
         //throw new io.cucumber.java.PendingException();
     }

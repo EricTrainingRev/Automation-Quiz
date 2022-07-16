@@ -9,7 +9,8 @@ public class seleniumWait {
     private WebDriver driver;
 
     @FindBy (id="one")
-    public WebElement something;
+   
+    public WebElement Input;
 
     @FindBy (id="submit")
     public WebElement submitButton;
@@ -24,12 +25,30 @@ public class seleniumWait {
 
 
 
-    public void clickButton() {
-    }
+    // public void clickButton() {
+    // }
 
 
 
     public void submitButton() {
+    }
+
+
+
+    public void clickButton(String string){
+        // to click on an element you just use for the click() method
+        this.submitButton.click();
+    }
+
+
+
+    public void submitButton(String string) {
+    }
+
+
+
+    public void EnterText(String string) {
+        this.Input.submit();
     }
 }
 

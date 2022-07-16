@@ -1,6 +1,7 @@
 package com.automationquizz.steps;
 
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.automationquizz.runner.TestRunner;
@@ -32,9 +33,9 @@ public class pullUpPage {
     }
     @Then("An alert should pop up with a success message for page one")
     public void An_alert_should_pop_up_with_a_success_message_for_page_one() {
-        TestRunner.Wait.until(ExpectedConditions.titleIs("pageone"));
-            String title =TestRunner.driver.getTitle();
-            Assert.assertEquals("pageone", title);
+        TestRunner.Wait.until(ExpectedConditions.alertIsPresent());
+            String Alert =TestRunner.driver.getWindowHandle();
+            Assert.assertEquals("SUCCESS!!!", Alert);
         // Write code here that turns the phrase above into concrete actions
         //throw new io.cucumber.java.PendingException();
     }
